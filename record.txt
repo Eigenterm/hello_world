@@ -1,0 +1,37 @@
+cd /c/Users/11323/Desktop/gitlab
+git config --global user.name "Kimchange"
+git config --global user.email "eigenvector@tju.edu.cn"
+git init
+
+git add record.txt
+git add *
+git commit -m "这次提交的描述"
+
+git status
+git checkout "文件名" //暂存区恢复文件
+git diff
+
+clear //清屏
+git log //查看历史版本
+
+//回到上个版本
+git reset --hard HEAD^
+//回到上上个版本
+git reset --hard HEAD^^
+//回到指定版本号
+git reset --hard 版本号
+
+
+ssh-keygen -t rsa -C "eigenvector@tju.edu.cn"
+
+
+git remote add origin https://github.com/Kimchange/hello_world.git
+git pull origin master
+git pull origin master --allow-unrelated-histories
+git push -u origin master
+
+git push
+git clone https://github.com/Kimchange/hello_world.git
+
+git pull
+
