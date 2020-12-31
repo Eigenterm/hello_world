@@ -8,7 +8,7 @@ error:
 
 Docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 
-###### tried:
+#### tried:
 
 `sudo apt-get remove docker docker-engine docker-ce docker.io`
 `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
@@ -21,18 +21,18 @@ Docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is t
 `docker --version`
 `sudo docker run hello-world`
 
-###### failed, tried:
+#### failed, tried:
 
 `systemctl status docker`
 `sudo systemctl stop docker`
 `sudo systemctl start docker`
 `sudo systemctl enable docker`
 
-###### failed, tried:
+#### failed, tried:
 
 `ps axf | grep docker | grep -v grep | awk '{print "kill -9 " $1}' | sudo sh`
 
-###### failed, tried:
+#### failed, tried:
 
 `sudo dockerd`
 
@@ -40,7 +40,7 @@ then error:
 
 failed to start daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid
 
-###### tried:
+#### tried:
 
 `rm -rf   /var/run/docker.pid`
 `sudo dockerd`
